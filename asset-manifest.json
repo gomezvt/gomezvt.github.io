@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gomezvt.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/gomezvt.github.io/static/js/main.8e051cd0.chunk.js",
+    "main.js.map": "/gomezvt.github.io/static/js/main.8e051cd0.chunk.js.map",
+    "runtime-main.js": "/gomezvt.github.io/static/js/runtime-main.07aa7322.js",
+    "runtime-main.js.map": "/gomezvt.github.io/static/js/runtime-main.07aa7322.js.map",
+    "static/js/2.c954a522.chunk.js": "/gomezvt.github.io/static/js/2.c954a522.chunk.js",
+    "static/js/2.c954a522.chunk.js.map": "/gomezvt.github.io/static/js/2.c954a522.chunk.js.map",
+    "static/js/3.50a542ec.chunk.js": "/gomezvt.github.io/static/js/3.50a542ec.chunk.js",
+    "static/js/3.50a542ec.chunk.js.map": "/gomezvt.github.io/static/js/3.50a542ec.chunk.js.map",
+    "index.html": "/gomezvt.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/gomezvt.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.c954a522.chunk.js.LICENSE.txt": "/gomezvt.github.io/static/js/2.c954a522.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/gomezvt.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07aa7322.js",
+    "static/js/2.c954a522.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.8e051cd0.chunk.js"
+  ]
+}
