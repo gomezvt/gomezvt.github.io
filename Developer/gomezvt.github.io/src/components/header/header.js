@@ -31,10 +31,10 @@ export default class Header extends Component {
               <table style={{ width: "100%" }}>
                 <tr>
                   <td>
-                    <a href="https://apps.apple.com/us/app/star-fighter-alien-galaxies/id1488097401" rel="noreferrer" target="_blank"><img style={{ height: 150, width: 150 }} src={star} alt="Star Fighter: Alien Galaxies by Greg Gomez" /></a>
+                    <a href="https://apps.apple.com/us/app/star-fighter-alien-galaxies/id1488097401" rel="noreferrer" target="_blank"><img style={{ height: 130, width: 130 }} src={star} alt="Star Fighter: Alien Galaxies by Greg Gomez" /></a>
                   </td>
                   <td>
-                    <a href="https://apps.apple.com/us/app/sup-city/id1258947595" rel="noreferrer" target="_blank"><img style={{ height: 150, width: 150 }} src={sup} alt="Sup? City by Greg Gomez" /></a>
+                    <a href="https://apps.apple.com/us/app/sup-city/id1258947595" rel="noreferrer" target="_blank"><img style={{ height: 130, width: 130 }} src={sup} alt="Sup? City by Greg Gomez" /></a>
                   </td>
                 </tr>
               </table>
