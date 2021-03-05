@@ -31,17 +31,17 @@ export default class Header extends Component {
               <table style={{ width: "100%" }}>
                 <tr>
                   <td>
-                    <a href="https://apps.apple.com/us/app/star-fighter-alien-galaxies/id1488097401" target="_blank"><img src={star} alt="Star Fighter: Alien Galaxies by Greg Gomez" /></a>
+                    <a href="https://apps.apple.com/us/app/star-fighter-alien-galaxies/id1488097401" rel="noreferrer" target="_blank"><img src={star} alt="Star Fighter: Alien Galaxies by Greg Gomez" /></a>
                   </td>
                   <td>
-                    <a href="https://apps.apple.com/us/app/sup-city/id1258947595" target="_blank"><img src={sup} alt="Sup? City by Greg Gomez" /></a>
+                    <a href="https://apps.apple.com/us/app/sup-city/id1258947595" rel="noreferrer" target="_blank"><img src={sup} alt="Sup? City by Greg Gomez" /></a>
                   </td>
                 </tr>
               </table>
               <br />
-              <a href="mailto:greg@gomez.ws" style={{ color: "#fff" }}>greg@gomez.ws</a>
               <hr color="#fff" />
-              <ul className="social">
+              <a href="mailto:greg@gomez.ws" style={{ color: "#fff", textDecoration: "underline" }}>greg@gomez.ws</a>
+              {/* <ul className="social">
                 {
                   resumeData.socialLinks && resumeData.socialLinks.map(item => {
                     return (
@@ -51,7 +51,7 @@ export default class Header extends Component {
                     )
                   })
                 }
-              </ul>
+              </ul> */}
             </div>
           </div>
 
