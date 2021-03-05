@@ -1,10 +1,10 @@
 let resumeData = {
   "imagebaseurl": "https://techonoeticsclub.github.io/",
-  "name": "John Doe",
-  "role": "Frontend Developer",
+  "name": "Greg",
+  "role": "Front end web/mobile developer, gamer, & technology connoisseur.",
   "linkedinId": "https://www.linkedin.com/in/gregorygomez/",
   "skypeid": "Your skypeid",
-  "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+  "roleDescription": "Check out Star Fighter: Alien Galaxies and Sup? City, now on the App Store!",
   "socialLinks": [
     {
       "name": "linkedin",
