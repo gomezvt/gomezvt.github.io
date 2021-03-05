@@ -1,10 +1,10 @@
 let resumeData = {
   "imagebaseurl": "https://techonoeticsclub.github.io/",
   "name": "Greg",
-  "role": "Front end web/mobile developer, gamer, & technology connoisseur.",
+  "role": "",
   "linkedinId": "https://www.linkedin.com/in/gregorygomez/",
   "skypeid": "Your skypeid",
-  "roleDescription": "Check out Star Fighter: Alien Galaxies and Sup? City, now on the App Store!",
+  "roleDescription": "Front end web/mobile developer, gamer, & technology connoisseur. Check out Star Fighter: Alien Galaxies and Sup? City, now on the App Store!",
   "socialLinks": [
     {
       "name": "linkedin",
