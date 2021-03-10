@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { styles } from './styles';
+import React, {Component} from 'react';
+import {styles} from './styles';
 import {
   Platform,
   Text,
@@ -8,30 +8,54 @@ import {
   Image,
   TouchableOpacity,
   ImageBackground,
+  Dimensions,
 } from 'react-native';
-import { AdMobBanner, AdMobInterstitial } from 'react-native-admob';
+import {AdMobBanner, AdMobInterstitial} from 'react-native-admob';
+import GameScene from './src/GameScene';
+import {GameEngine, GameLoop} from 'react-native-game-engine';
 
-export default class Example extends Component {
+export default class App extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      didStart: false,
+    };
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
     AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     AdMobInterstitial.removeAllListeners();
-  }
-  showInterstitial() {
-    AdMobInterstitial.showAd().catch((e) => console.warn(e));
-  }
+  };
 
-  render() {
+  showInterstitial = () => {
+    AdMobInterstitial.showAd().catch((e) => console.warn(e));
+  };
+
+  displayMenu = () => {
     const background = require('./img/menu.png');
     const startButton = require('./img/start.png');
+    return (
+      <>
+        <ImageBackground source={background} style={styles.bg} />
+        <Text style={styles.text}>Lava Pit</Text>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => this.setStartState(true)}>
+          <Image source={startButton} style={styles.button} />
+        </TouchableOpacity>
+      </>
+    );
+  };
+
+  setStartState = (didStart) => {
+    this.setState({didStart: didStart});
+  };
+
+  render() {
     return (
       <>
         <SafeAreaView />
@@ -41,11 +65,11 @@ export default class Example extends Component {
           ref={(el) => (this._smartBannerExample = el)}
         />
         <View style={styles.container}>
-          <ImageBackground source={background} style={styles.bg} />
-          <Text style={styles.text}>Lava Pit</Text>
-          <TouchableOpacity style={styles.button}>
-            <Image source={startButton} style={styles.button} />
-          </TouchableOpacity>
+          {this.state.didStart ? (
+            <GameScene setStartState={this.setStartState} />
+          ) : (
+            this.displayMenu()
+          )}
         </View>
       </>
     );
